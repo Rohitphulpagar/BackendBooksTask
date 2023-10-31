@@ -11,7 +11,7 @@ const deletes = require("./Route/deleteBook");
 dotenv.config();
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+
 
 mongoose
   .connect(process.env.MONGODB_URL, {
